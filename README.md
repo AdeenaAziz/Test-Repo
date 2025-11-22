@@ -9,7 +9,7 @@ To handle this, the solution uses Python’s `zip(*lists)` to transpose the data
 
 ---
 
-## 🧮 Problem Description
+Problem Description
 
 - The first input line contains:
 n x
@@ -34,7 +34,7 @@ where
 90.0
 85.5
 
-## 🧠 Solution Logic
+Solution Logic
 
 1. Read `n` and `x`
 2. Read `x` rows of subject-wise marks
@@ -44,7 +44,7 @@ where
 
 ---
 
-## 📌 student_averages.py
+student_averages.py
 
 
 HackerRank Problem:
