@@ -17,5 +17,13 @@ JSON (JavaScript Object Notation) is a lightweight data format perfect for data 
 ```python
 import json
 
-with open("output.json", "w") as file:
-    json.dump(data, file)
+creating json
+# JSON as string
+json_data = '{"name": "John", "age": 30, "city": "New York"}'
+
+# JSON from Python dictionary
+python_dict = {
+    "name": "John", 
+    "age": 30, 
+    "city": "New York"
+}
