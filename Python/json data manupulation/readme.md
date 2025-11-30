@@ -8,10 +8,6 @@
 5. [Practice Exercises](#practice-exercises)
 
 ---
-
-
-
-### :
 ```
 ## Introduction
 JSON (JavaScript Object Notation) is a lightweight data format perfect for data exchange between Python and other systems.
@@ -64,4 +60,5 @@ File contains: {"name": "John", "age": 28, "city": "New York", "country": "USA"}
 with open("output.json", "r") as file:
     data = json.load(file)
     print(data)
+
 
