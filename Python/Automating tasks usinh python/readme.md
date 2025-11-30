@@ -1,9 +1,7 @@
 Python Automation Scripts
-
 This repository contains Python scripts for automating common tasks used in real-world corporate environments. These scripts help save time by automating repetitive tasks like sending emails, renaming files, deleting old files, scraping websites, scheduling tasks, and even shutting down your computer.
 
 Table of Contents
-
 Send Automated Emails
 
 Rename Files
@@ -20,8 +18,7 @@ Installation
 
 Usage
 
-1. Send Automated Emails
-
+Send Automated Emails
 This script sends email notifications automatically using Gmail.
 
 Requirements:
@@ -44,8 +41,7 @@ Send email
 
 Important: Do NOT use your Gmail password. Use App Passwords from Google Account → Security → App Passwords.
 
-2. Rename Files
-
+Rename Files
 This script renames multiple files in a folder automatically based on a naming convention.
 
 Requirements: Python os module (built-in)
@@ -60,11 +56,9 @@ Loop through files and rename them
 
 Replace old names with new names as required
 
-Example:
-old_file1.txt → new_file1.txt
+Example: old_file1.txt → new_file1.txt
 
-3. Delete Old Files
-
+Delete Old Files
 This script deletes files older than a certain date automatically.
 
 Requirements: Python os and datetime modules (built-in)
@@ -79,8 +73,7 @@ Define a threshold date
 
 Loop through files, check modification time, and delete files older than threshold
 
-4. Web Scraping
-
+Web Scraping
 This script extracts all links from a website.
 
 Requirements:
@@ -99,11 +92,9 @@ Parse HTML to find all <a> tags
 
 Extract href links
 
-Example:
-Extract all URLs from https://www.netflix.com
+Example: Extract all URLs from https://www.netflix.com
 
-5. Schedule Tasks
-
+Schedule Tasks
 This script runs tasks at a specific time automatically.
 
 Requirements: schedule and time modules
@@ -116,24 +107,33 @@ Use schedule.every().day.at("HH:MM").do(function)
 
 Keep the script running with while True
 
-Example:
-Print "This is a scheduled task" at 2 PM every day.
+Example: Print "This is a scheduled task" at 2 PM every day.
 
-6. Shutdown Computer
-
+Shutdown Computer
 This script shuts down a Windows computer automatically.
 
 Requirements: Python os module
 
 Steps:
 
+python
 import os
 os.system("shutdown /s /t 0")
-
-
 /s → shutdown
 
 /t 0 → immediately
 
 ⚠️ Be careful! This will shut down your computer immediately.
+
+Installation
+bash
+pip install requests beautifulsoup4 schedule
+Usage
+Clone this repository
+
+Install required dependencies
+
+Run any script: python script_name.py
+
+Modify variables according to your needs
 
