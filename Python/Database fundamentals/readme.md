@@ -1,54 +1,99 @@
-# What is a Database?
-A structured collection of data organized for easy access, management, and updating
-Acts as a centralized repository for organized data
+# Database Basics & Relationships Guide
+
+## Table of Contents
+1. [Introduction to Databases](#introduction-to-databases)
+2. [Relational Models](#relational-models)
+3. [Database Keys](#database-keys)
+4. [Database Relationships](#database-relationships)
+5. [Normalization](#normalization)
+6. [SQL Basics](#sql-basics)
+7. [Examples & Use Cases](#examples--use-cases)
+
+---
+
+## Introduction to Databases
+
+### What is a Database?
+A database is a structured collection of data organized for easy access, management, and updating.
+
+### Characteristics:
+- Structured and organized data
+- Centralized storage
+- Supports multiple users
+- Provides data security
+- Ensures data integrity
+
+---
 
 ## Relational Models
-Way of organizing data in tables with rows and columns
 
-**Table/Relation** = Collection of related data
+### Definition:
+A way of organizing data in tables with rows and columns.
 
-**Rows/Tuples** = Horizontal entries
+### Components:
+| Term | Description | Example |
+|------|-------------|---------|
+| **Table/Relation** | Collection of related data | Employees table |
+| **Rows/Tuples** | Horizontal entries | Individual employee records |
+| **Columns/Attributes** | Vertical categories | Employee ID, Name, Department |
 
-**Columns/Attributes** = Vertical categories
+---
 
-### Database Keys 
-*Primary Key*
-Unique identifier for each record in a table
-Example: Employee ID (each employee has unique ID)
-Cannot have duplicate values
+## Database Keys
 
-*Foreign Key*
-Column that references primary key in another table
-Establishes relationships between tables
-Example: Department ID in Employees table references Department table
+### Primary Key
+- Unique identifier for each record
+- Must be unique and cannot be NULL
+- Only one per table
 
-**Database Relationships**
-Three Types of Relationships:
-**>*One-to-One*: One record in Table A relates to exactly one record in Table B
+### Foreign Key
+- Creates relationship between tables
+- References primary key of another table
+- Can have duplicate values and can be NULL
 
-> Example: User ↔ User Profile
+---
 
-> *One-to-Many*: One record in Table A relates to multiple records in Table B
+## Database Relationships
 
-> Example: Department ↔ Multiple Employees
+### 1. One-to-One Relationship
+One record in Table A relates to exactly one record in Table B.
 
-> *Many-to-Many*: Multiple records in Table A relate to multiple records in Table B
+**Examples**: 
+- User ↔ User Profile
+- Person ↔ Passport
 
-> Example: Students ↔ Courses (requires junction table)**
+### 2. One-to-Many Relationship
+One record in Table A relates to multiple records in Table B.
 
-### Normalization
-Process of organizing database to minimize redundancy
-Breaking large tables into smaller, related tables
-Benefits: Easier management, reduced data duplication
-Example: Split Customer Orders table into Customers and Orders tables
+**Examples**:
+- Department ↔ Employees
+- Customer ↔ Orders
 
-### SQL (Structured Query Language)
-Domain-specific language for managing relational databases
+### 3. Many-to-Many Relationship
+Multiple records in Table A relate to multiple records in Table B.
 
-Used for creating, retrieving, updating, and deleting data
+**Examples**:
+- Students ↔ Courses
+- Doctors ↔ Patients
 
-**Common commands: SELECT, INSERT, UPDATE, DELETE, CREATE**
+---
 
+## Normalization
+Process of organizing database structure to minimize redundancy and improve data integrity.
 
+---
 
+## SQL Basics
+Structured Query Language for managing relational databases.
 
+### Common Commands:
+- `SELECT` - Retrieve data
+- `INSERT` - Add new records
+- `UPDATE` - Modify records
+- `DELETE` - Remove records
+- `CREATE` - Create tables
+
+---
+
+## Quick Start
+Check the `examples/` directory for practical SQL examples and `practice/` for exercises.
