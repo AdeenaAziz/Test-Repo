@@ -11,19 +11,15 @@ Way of organizing data in tables with rows and columns
 
 **Columns/Attributes** = Vertical categories
 
-**Database Keys**
+### Database Keys 
 *Primary Key*
 Unique identifier for each record in a table
-
 Example: Employee ID (each employee has unique ID)
-
 Cannot have duplicate values
 
 *Foreign Key*
 Column that references primary key in another table
-
 Establishes relationships between tables
-
 Example: Department ID in Employees table references Department table
 
 **Database Relationships**
