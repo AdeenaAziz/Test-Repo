@@ -27,7 +27,7 @@ Three Types of Relationships:
 >*One-to-One*: One record in Table A relates to exactly one record in Table B
 
 > Example: User ↔ User Profile
-> USERS Table:
+USERS Table:
 UserID | Username | Email
 1      | john_doe | john@email.com
 2      | jane_smith | jane@email.com
