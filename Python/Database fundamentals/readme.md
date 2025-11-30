@@ -28,33 +28,25 @@ Three Types of Relationships:
 
 > Example: User ↔ User Profile
 
-*One-to-Many*: One record in Table A relates to multiple records in Table B
+> *One-to-Many*: One record in Table A relates to multiple records in Table B
 
-Example: Department ↔ Multiple Employees
+> Example: Department ↔ Multiple Employees
 
-*Many-to-Many*: Multiple records in Table A relate to multiple records in Table B
+> *Many-to-Many*: Multiple records in Table A relate to multiple records in Table B
 
-Example: Students ↔ Courses (requires junction table)
+> Example: Students ↔ Courses (requires junction table)
 
-**Normalization**
+### Normalization
 Process of organizing database to minimize redundancy
-
 Breaking large tables into smaller, related tables
-
 Benefits: Easier management, reduced data duplication
-
 Example: Split Customer Orders table into Customers and Orders tables
 
-**SQL (Structured Query Language)**
+### SQL (Structured Query Language)
 Domain-specific language for managing relational databases
 
 Used for creating, retrieving, updating, and deleting data
 
 **Common commands: SELECT, INSERT, UPDATE, DELETE, CREATE**
 
-**Additional Resources Mentioned**
-GitHub account for complete documentation and projects
 
-LinkedIn for architecture examples and corporate insights
-
-Telegram channel for direct communication and support
