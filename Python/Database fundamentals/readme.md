@@ -1,4 +1,4 @@
-#**What is a Database?**
+# What is a Database?
 A structured collection of data organized for easy access, management, and updating
 Acts as a centralized repository for organized data
 
