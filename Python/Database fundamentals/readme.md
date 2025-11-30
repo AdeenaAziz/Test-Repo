@@ -24,18 +24,9 @@ Example: Department ID in Employees table references Department table
 
 **Database Relationships**
 Three Types of Relationships:
->*One-to-One*: One record in Table A relates to exactly one record in Table B
+**>*One-to-One*: One record in Table A relates to exactly one record in Table B
 
 > Example: User ↔ User Profile
-USERS Table:
-UserID | Username | Email
-1      | john_doe | john@email.com
-2      | jane_smith | jane@email.com
-
-USER_PROFILES Table:
-ProfileID | UserID | FullName       | Phone       | DateOfBirth
-1         | 1      | John Doe       | 123-4567    | 1990-05-15
-2         | 2      | Jane Smith     | 987-6543    | 1992-08-20
 
 > *One-to-Many*: One record in Table A relates to multiple records in Table B
 
@@ -43,7 +34,7 @@ ProfileID | UserID | FullName       | Phone       | DateOfBirth
 
 > *Many-to-Many*: Multiple records in Table A relate to multiple records in Table B
 
-> Example: Students ↔ Courses (requires junction table)
+> Example: Students ↔ Courses (requires junction table)**
 
 ### Normalization
 Process of organizing database to minimize redundancy
