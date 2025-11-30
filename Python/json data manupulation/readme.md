@@ -25,8 +25,9 @@ This guide walks through essential JSON operations in Python, with examples and 
 
 ## Usage Examples  
 
-### Creating JSON Data  
+###  
 ```python
+#Creating JSON Data 
 import json
 
 # JSON as a string
@@ -57,6 +58,7 @@ with open("output.json", "w") as f:
 with open("output.json", "r") as f:
     data = json.load(f)
 print(data)
+
 
 
 
