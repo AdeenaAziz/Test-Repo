@@ -2,7 +2,7 @@
 A structured collection of data organized for easy access, management, and updating
 Acts as a centralized repository for organized data
 
-**Relational Models**
+## Relational Models
 Way of organizing data in tables with rows and columns
 
 **Table/Relation** = Collection of related data
