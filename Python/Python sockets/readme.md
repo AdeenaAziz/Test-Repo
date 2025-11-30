@@ -1,4 +1,4 @@
-###Python Socket Demo
+#Python Socket Demo
 
 A simple Client–Server project created while learning the Python Socket library.
 This project demonstrates how two programs can communicate with each other over a network using TCP sockets.
@@ -28,5 +28,6 @@ The server will print the message sent by the client.
 ###Requirements:
 - Python 3.x
 - Uses built‑in socket module only
+
 
 
