@@ -1,139 +1,103 @@
 Python Automation Scripts
-This repository contains Python scripts for automating common tasks used in real-world corporate environments. These scripts help save time by automating repetitive tasks like sending emails, renaming files, deleting old files, scraping websites, scheduling tasks, and even shutting down your computer.
 
-Table of Contents
-Send Automated Emails
+This repository contains Python scripts for automating common tasks used in real-world corporate environments.
 
-Rename Files
+Table of Contents:
+- Send Automated Emails
+- Rename Files
+- Delete Old Files
+- Web Scraping
+- Schedule Tasks
+- Shutdown Computer
+- Installation
+- Usage
 
-Delete Old Files
-
-Web Scraping
-
-Schedule Tasks
-
-Shutdown Computer
-
-Installation
-
-Usage
-
-Send Automated Emails
+SEND AUTOMATED EMAILS
 This script sends email notifications automatically using Gmail.
 
 Requirements:
-
-Python smtplib and email module (built-in)
-
-Gmail account with App Password
+- Python smtplib and email module (built-in)
+- Gmail account with App Password
 
 Steps:
-
-Import libraries: smtplib, MIMEText
-
-Define sender, receiver, message, and subject
-
-Connect to Gmail SMTP server (smtp.gmail.com) with TLS
-
-Login using App Password
-
-Send email
+1. Import libraries: smtplib, MIMEText
+2. Define sender, receiver, message, and subject
+3. Connect to Gmail SMTP server (smtp.gmail.com) with TLS
+4. Login using App Password
+5. Send email
 
 Important: Do NOT use your Gmail password. Use App Passwords from Google Account → Security → App Passwords.
 
-Rename Files
-This script renames multiple files in a folder automatically based on a naming convention.
+RENAME FILES
+This script renames multiple files in a folder automatically.
 
 Requirements: Python os module (built-in)
 
 Steps:
-
-Import os
-
-Set the directory path
-
-Loop through files and rename them
-
-Replace old names with new names as required
+1. Import os
+2. Set the directory path
+3. Loop through files and rename them
+4. Replace old names with new names
 
 Example: old_file1.txt → new_file1.txt
 
-Delete Old Files
-This script deletes files older than a certain date automatically.
+DELETE OLD FILES
+This script deletes files older than a certain date.
 
-Requirements: Python os and datetime modules (built-in)
+Requirements: Python os and datetime modules
 
 Steps:
+1. Import os and datetime
+2. Set the directory path
+3. Define a threshold date
+4. Loop through files and delete old ones
 
-Import os and datetime
-
-Set the directory path
-
-Define a threshold date
-
-Loop through files, check modification time, and delete files older than threshold
-
-Web Scraping
+WEB SCRAPING
 This script extracts all links from a website.
 
 Requirements:
-
-requests module
-
-beautifulsoup4 module
+- requests module
+- beautifulsoup4 module
 
 Steps:
+1. Import requests and BeautifulSoup
+2. Get HTML of the website
+3. Parse HTML to find all <a> tags
+4. Extract href links
 
-Import requests and BeautifulSoup
+Example: Extract URLs from https://www.netflix.com
 
-Get HTML of the website
-
-Parse HTML to find all <a> tags
-
-Extract href links
-
-Example: Extract all URLs from https://www.netflix.com
-
-Schedule Tasks
-This script runs tasks at a specific time automatically.
+SCHEDULE TASKS
+This script runs tasks at a specific time.
 
 Requirements: schedule and time modules
 
 Steps:
+1. Define a Python function to run
+2. Use schedule.every().day.at("HH:MM").do(function)
+3. Keep the script running with while True
 
-Define a Python function to run
+Example: Print task at 2 PM every day.
 
-Use schedule.every().day.at("HH:MM").do(function)
-
-Keep the script running with while True
-
-Example: Print "This is a scheduled task" at 2 PM every day.
-
-Shutdown Computer
-This script shuts down a Windows computer automatically.
+SHUTDOWN COMPUTER
+This script shuts down a Windows computer.
 
 Requirements: Python os module
 
 Steps:
-
-python
 import os
 os.system("shutdown /s /t 0")
-/s → shutdown
 
-/t 0 → immediately
+/s = shutdown
+/t 0 = immediately
 
-⚠️ Be careful! This will shut down your computer immediately.
+WARNING: This will shut down your computer immediately.
 
-Installation
-bash
+INSTALLATION
 pip install requests beautifulsoup4 schedule
-Usage
-Clone this repository
 
-Install required dependencies
-
-Run any script: python script_name.py
-
-Modify variables according to your needs
-
+USAGE
+1. Clone this repository
+2. Install required dependencies
+3. Run any script: python script_name.py
+4. Modify variables according to your needs
