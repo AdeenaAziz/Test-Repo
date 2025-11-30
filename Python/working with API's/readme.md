@@ -48,7 +48,7 @@ The code shows how to use the `requests` library in Python to be the "customer."
 
 ### Step 1: Get Ready (Install the Library)
 You need a tool to talk to the API. In Python, that tool is the `requests` library.
-pip install requests
+Here we use this command: pip install requests
 
 ```bash
 
@@ -90,13 +90,13 @@ if response.status_code == 201:
     print("Success! New post created.")
     print(response.json())
 else:
-    print("Error:", response.status_code)  ```
+    print("Error:", response.status_code)  
 
 The PUT and DELETE examples work very similarly, just using requests.put() and requests.delete().
 
-Summary
+'''Summary
 API is a Waiter: It's a messenger between your code and a service on the internet.
 
 You Make Requests: You use Python to ask the API to GET, POST, PUT, or DELETE data.
 
-You Get a Response: The API sends back a status code and sometimes the data you asked for.
+You Get a Response: The API sends back a status code and sometimes the data you asked for.'''
