@@ -1,10 +1,10 @@
 # JSON Manipulation in Python – Complete Guide
 
-## 🚀 Project Overview  
+##  Project Overview  
 A comprehensive guide to working with JSON in Python: from basic operations to file I/O, real-world examples, and hands-on exercises.  
 This repository aims to help beginners and intermediates understand how to create, parse, manipulate, and persist JSON data using Python’s built-in `json` module.
 
-## 📚 Table of Contents  
+##  Table of Contents  
 - [Introduction](#introduction)  
 - [Prerequisites](#prerequisites)  
 - [Usage Examples](#usage-examples)  
@@ -12,12 +12,6 @@ This repository aims to help beginners and intermediates understand how to creat
   - [Parsing JSON Strings](#parsing-json-strings)  
   - [Accessing & Modifying Data](#accessing--modifying-data)  
   - [File Operations](#file-operations)  
-- [Practical Examples](#practical-examples)  
-- [Practice Exercises](#practice-exercises)  
-- [Project Structure](#project-structure)  
-- [Contributing](#contributing)  
-- [License](#license)  
-- [Contact / Author](#contact--author)
 
 ## Introduction  
 JSON (JavaScript Object Notation) is a widely used data-interchange format — readable for both humans and machines.  
@@ -63,3 +57,4 @@ with open("output.json", "w") as f:
 with open("output.json", "r") as f:
     data = json.load(f)
 print(data)
+
