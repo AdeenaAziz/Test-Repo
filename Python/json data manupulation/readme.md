@@ -13,17 +13,22 @@
 
 JSON (JavaScript Object Notation) is a lightweight data format perfect for data exchange between Python and other systems.
 
-### Quick Start:
+### :
 ```python
 import json
 
-creating json
-# JSON as string
+#creating json
+#JSON as string
 json_data = '{"name": "John", "age": 30, "city": "New York"}'
 
-# JSON from Python dictionary
+#JSON from Python dictionary
 python_dict = {
     "name": "John", 
     "age": 30, 
     "city": "New York"
 }
+
+json_data = '{"name": "John", "age": 30, "city": "New York"}'
+data = json.loads(json_data)
+print(data)  # Output: {'name': 'John', 'age': 30, 'city': 'New York'}
+
