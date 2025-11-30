@@ -48,9 +48,10 @@ The code shows how to use the `requests` library in Python to be the "customer."
 
 ### Step 1: Get Ready (Install the Library)
 You need a tool to talk to the API. In Python, that tool is the `requests` library.
+pip install requests
 
 ```bash
-pip install requests
+
 
 Step 2: Making a GET Request (Asking for Information)
 import requests
@@ -89,7 +90,7 @@ if response.status_code == 201:
     print("Success! New post created.")
     print(response.json())
 else:
-    print("Error:", response.status_code)
+    print("Error:", response.status_code)  ```
 
 The PUT and DELETE examples work very similarly, just using requests.put() and requests.delete().
 
