@@ -58,3 +58,8 @@ with open("output.json", "r") as f:
     data = json.load(f)
 print(data)
 
+Reading from JSON file
+
+with open("output.json", "r") as f:
+    data = json.load(f)
+print(data)
