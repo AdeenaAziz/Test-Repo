@@ -7,9 +7,8 @@
 4. [Practical Examples](#practical-examples)
 5. [Practice Exercises](#practice-exercises)
 
----
-
-Introduction
+**```python
+import json
 
 ## Creating JSON Data
 
@@ -58,4 +57,5 @@ File contains: {"name": "John", "age": 28, "city": "New York", "country": "USA"}
 
 with open("output.json", "r") as file:
     data = json.load(file)
-    print(data) provide a proper redame for this
+    print(data)
+```**
