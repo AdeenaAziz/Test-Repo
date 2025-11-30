@@ -24,9 +24,9 @@ Example: Department ID in Employees table references Department table
 
 **Database Relationships**
 Three Types of Relationships:
-*One-to-One*: One record in Table A relates to exactly one record in Table B
+>*One-to-One*: One record in Table A relates to exactly one record in Table B
 
-Example: User ↔ User Profile
+> Example: User ↔ User Profile
 
 *One-to-Many*: One record in Table A relates to multiple records in Table B
 
